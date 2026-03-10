@@ -1,11 +1,15 @@
 # ld-vimwiki-export.vim
 
-```
-" Add to .vimrc
-let g:vimwiki_list = [{
-  \ 'path': '~/vimwiki/',
-  \ 'path_html': '~/vimwiki_html/',
-  \ 'syntax': 'markdown',
-  \ 'ext': '.md'
-  \ }]
-```
+A fast, lightweight, and bloat-free HTML exporter for [Vimwiki](https://github.com/vimwiki/vimwiki). 
+Instead of relying on heavy Haskell dependencies (like Pandoc) or the default Vimwiki HTML engine, this plugin uses **[lowdown](https://kristaps.bsd.lv/lowdown/)** – an ultra-fast, secure Markdown translator written in C.
+
+## Features
+* **Zero Bloat:** Uses the blazing-fast `lowdown` binary instead of Pandoc.
+* **Wikilinks Support:** Automatically converts standard Vimwiki `[[links]]` to proper Markdown links on the fly before HTML generation.
+* **Clean URLs:** Sanitizes filenames and links (removes special characters, converts spaces to hyphens, forces lowercase) for web-safe URLs.
+* **Smart CSS/JS Injection:** Automatically injects `<link>` and `<script>` tags into the generated HTML, calculating proper relative paths for nested directories.
+* **Nested Folders:** Fully respects your directory structure.
+
+## Requirements
+* `lowdown` installed on your system (`sudo pacman -S lowdown` on Arch Linux).
+* Vimwiki configured to use Markdown syntax.

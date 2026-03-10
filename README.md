@@ -1,8 +1,7 @@
 # ld-vimwiki-export.vim
 
-
 ```
-" --- 1. KONFIGURACJA BAZOWA VIMWIKI ---
+" Add to .vimrc
 let g:vimwiki_list = [{
   \ 'path': '~/vimwiki/',
   \ 'path_html': '~/vimwiki_html/',

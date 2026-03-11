@@ -35,7 +35,6 @@ function! ProcessMarkdownContent(filepath)
     return join(l:newlines, "\n")
 endfunction
 
-
 " --- CORE EXPORT FUNCTIONS ---
 
 function! LdWiki2HTML()

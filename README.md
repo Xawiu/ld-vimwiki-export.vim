@@ -1,5 +1,9 @@
 # ld-vimwiki-export.vim
 
+
+## PROJECT MOVED – This repository has been moved to Codeberg. The current version can be found here: https://codeberg.org/Xardas/ld-vimwiki-export.vim
+
+
 A fast, lightweight, and bloat-free HTML exporter for [Vimwiki](https://github.com/vimwiki/vimwiki). 
 Instead of relying on heavy Haskell dependencies (like Pandoc) or the default Vimwiki HTML engine, this plugin uses **[lowdown](https://kristaps.bsd.lv/lowdown/)** – an ultra-fast, secure Markdown translator written in C.
 
